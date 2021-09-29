@@ -81,6 +81,7 @@ export default function Connection_status(props)
                 setChecker_view('check');
                 setChecker_txt(internet ? `Connecting with server: ${server_attempts}` : 'No internet connection');
             }
+            actions.response();
         },
         ping_error: (resp)=>
         {
@@ -89,6 +90,16 @@ export default function Connection_status(props)
             setStatus(false);
             setChecker_view('off');
             setChecker_txt(internet ? `No connection with server` : 'No internet connection');
+
+            actions.response();
+        },
+        response: ()=>
+        {
+            if(props.response)
+                props.response({
+                    internet: internet,
+                    status: status
+                });
         }
     };
     // -----------------------------------------------------------------

@@ -20,6 +20,9 @@ function App() {
       if(args.logged)
         Global.session(args.session);
       setLogin(args.logged);
+    },
+    app_net_status: (args)=>
+    {
     }
   };
 
@@ -38,7 +41,7 @@ function App() {
         ):(
           <Fragment>
             <div>logged</div>
-            <Connection_status api={api} addon='app' cmd='run' />
+            <Connection_status api={api} addon='app' cmd='run' response={actions.app_net_status} />
           </Fragment>
         )}
         
