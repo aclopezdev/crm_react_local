@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #FFF;
+}
+
+
+.btn-link
+{
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+.btn-link:hover
+{
+  text-decoration: underline;
+}
