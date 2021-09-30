@@ -15,6 +15,15 @@ export class Session
         this._last_name = conf.last_name;
         this._email = conf.email;
     }
+
+    clear()
+    {
+        this._user_name = '';
+        this._first_name = '';
+        this._last_name = '';
+        this._email = '';
+        this._plan = '';
+    }
 }
 
 Session.create = (conf)=>
