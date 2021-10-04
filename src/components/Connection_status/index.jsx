@@ -112,7 +112,7 @@ export default function Connection_status(props)
 
     return (
         
-        <section>
+        <section className='Connection-status'>
 			<div className={`status-bbox status-${checker_view}`}>
 				<p>{checker_txt}</p>
 			</div>

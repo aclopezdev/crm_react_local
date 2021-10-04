@@ -3,6 +3,12 @@ import React, {Fragment, useState, useEffect} from 'react';
 import { Global } from '../../core/Global';
 import { Net } from '../../tools/main_tools';
 
+import SVGuser from './../../assets/icons/standard_user.svg';
+import SVGgear from './../../assets/icons/gear.svg';
+import SVGsettings from './../../assets/icons/settings.svg';
+
+import scss from './main.scss';
+
 
 export default function Session(props)
 {
@@ -38,6 +44,9 @@ export default function Session(props)
     return (
         
         <section>
+            <section className='session-profpicture-bbbox'>
+                <img src={SVGuser} />
+            </section>
             <section>
                 <p>{session._username}</p>
                 <p>{session._first_name}</p>
@@ -45,8 +54,8 @@ export default function Session(props)
                 <p>{session._email}</p>
             </section>
             <section>
-                <button>Settings</button>
-                <button onClick={actions.logout}>Logout</button>
+                <button className='btn-material btn-material-ico'><img src={SVGsettings} /></button>
+                <button className='btn-material btn_material_red' onClick={actions.logout}>Logout</button>
             </section>
         </section>
     

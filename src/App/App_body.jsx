@@ -31,6 +31,7 @@ export default function App_Body(props)
             <section className='app-body'>
                 <section className='main-menu'>
                     <Session api={props.api} logout_addon='login' logout_cmd='logout' logout_callback={props.logout_callback} />
+                    <hr/>
                     <Main_menu api={props.api} addon='session_menu' cmd='main_menu' />
                 </section>
                 <section className='content'>

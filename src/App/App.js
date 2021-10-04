@@ -44,7 +44,6 @@ function App() {
           </Fragment>
         ):(
           <Fragment>
-            <div>logged</div>
             <Connection_status api={api} addon='app' cmd='run' response={actions.app_net_status} />
             <App_Body api={api} logout_callback={actions.logout_resp}/>
           </Fragment>

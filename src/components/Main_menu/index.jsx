@@ -23,7 +23,12 @@ export default function Main_menu(props)
 
     return (
         
-        <Fragment></Fragment>
+        <section>
+            <button className='btn-material btn-material-large mb-5px'>Dashboard</button>
+            <button className='btn-material btn-material-large mb-5px'>Clients</button>
+            <button className='btn-material btn-material-large mb-5px'>Products</button>
+            <button className='btn-material btn-material-large mb-5px'>Stats</button>
+        </section>
     
     );
 };
