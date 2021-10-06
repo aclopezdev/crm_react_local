@@ -6,6 +6,7 @@ export class Session
     _last_name = '';
     _email = '';
     _plan = '';
+    _scope = '';
 
     constructor(conf)
     {
@@ -14,6 +15,7 @@ export class Session
         this._first_name = conf.first_name;
         this._last_name = conf.last_name;
         this._email = conf.email;
+        this._scope = conf.scope;
     }
 
     clear()
@@ -23,6 +25,7 @@ export class Session
         this._last_name = '';
         this._email = '';
         this._plan = '';
+        this._scope = '';
     }
 }
 

@@ -14,20 +14,36 @@ export default function Main_menu(props)
     
     // ACTIONS:
     const actions = {
+        call_dashboard: ()=>
+        {
+            props.selection_callback({section: 'dashboard'});
+        },
+        call_clients: ()=>
+        {
+            props.selection_callback({section: 'clients'});
+        },
+        call_products: ()=>
+        {
+            props.selection_callback({section: 'products'});
+        },
+        call_stats: ()=>
+        {
+            props.selection_callback({section: 'stats'});
+        }
     };
     // -----------------------------------------------------------------
     // -----------------------------------------------------------------
     
     useEffect(()=>{}, []);
-    
 
     return (
         
         <section>
-            <button className='btn-material btn-material-large mb-5px'>Dashboard</button>
-            <button className='btn-material btn-material-large mb-5px'>Clients</button>
-            <button className='btn-material btn-material-large mb-5px'>Products</button>
-            <button className='btn-material btn-material-large mb-5px'>Stats</button>
+            <button className='btn-material btn-material-large mb-5px' onClick={actions.call_dashboard}>Dashboard</button>
+            <button className='btn-material btn-material-large mb-5px' onClick={actions.call_clients}>Clients</button>
+            <button className='btn-material btn-material-large mb-5px' onClick={actions.call_products}>Products</button>
+            {props.scope !== 'regular' ? (<button className='btn-material btn-material-large mb-5px' onClick={actions.call_stats}>Analytics</button>) : <Fragment></Fragment>}
+            
         </section>
     
     );

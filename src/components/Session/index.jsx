@@ -54,7 +54,7 @@ export default function Session(props)
                 <p>{session._email}</p>
             </section>
             <section>
-                <button className='btn-material btn-material-ico'><img src={SVGsettings} /></button>
+                <button className='btn-material btn-material-ico' onClick={props.settings_callback}><img src={SVGsettings} /></button>
                 <button className='btn-material btn_material_red' onClick={actions.logout}>Logout</button>
             </section>
         </section>
