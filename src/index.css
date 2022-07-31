@@ -1,26 +1,3 @@
-@font-face {
-  font-family: 'aaarghnormal';
-  src: url('./assets/fonts/aaargh-webfont.woff2') format('woff2'),
-    url('./assets/fonts/aaargh-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'abelregular';
-  src: url('./assets/fonts/abel-regular-webfont.woff2') format('woff2'),
-    url('./assets/fonts/abel-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
-html, body
-{
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,21 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  font-family: 'abelregular';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-button{
-  font-family: 'abelregular';
-}
-
-
-#root
-{
-  height: 100%;
 }
